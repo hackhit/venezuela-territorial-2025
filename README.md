@@ -269,9 +269,9 @@ If you find any bugs or have feature requests, please create an issue on [GitHub
 
 ## Support
 
-- Email: contact@hackhit.info
+- Email: 83knmujyb@mozmail.com
 - Discussions: [GitHub Discussions](https://github.com/hackhit/venezuela-territorial-2025/discussions)
-- Documentation: [Full Documentation](https://www.hackhit.info/venezuela-territorial-2025)
+
 
 ---
 
