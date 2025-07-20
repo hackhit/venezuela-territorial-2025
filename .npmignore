@@ -1,0 +1,51 @@
+# Source files
+src/
+examples/
+.github/
+
+# Configuration files
+.eslintrc.js.backup
+eslint.config.js
+tsconfig.json
+vitest.config.ts
+rollup.config.js
+.releaserc
+.prettierrc
+
+# Development files
+.gitignore
+.editorconfig
+
+# CI/CD
+.github/
+
+# Dependencies
+node_modules/
+
+# Build artifacts
+*.tsbuildinfo
+
+# Test files
+coverage/
+**/*.test.ts
+**/*.spec.ts
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Husky
+.husky/
+
+# Cache
+.cache/

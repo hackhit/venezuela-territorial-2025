@@ -1,0 +1,103 @@
+{
+  "name": "venezuela-territorial-2025",
+  "version": "1.0.0",
+  "description": "Modern Venezuela territorial data library with TypeScript support and enhanced features for 2025",
+  "main": "dist/index.js",
+  "module": "dist/index.esm.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.esm.js",
+      "require": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "scripts": {
+    "build": "rollup -c",
+    "dev": "rollup -c -w",
+    "test": "vitest",
+    "test:coverage": "vitest --coverage",
+    "lint": "eslint src --fix",
+    "format": "prettier --write \"src/**/*.{ts,tsx,json,md}\"",
+    "type-check": "tsc --noEmit",
+    "docs": "typedoc src/index.ts",
+    "prepare": "husky install",
+    "prepublishOnly": "npm run lint && npm run type-check && npm run test && npm run build",
+    "release": "semantic-release"
+  },
+  "keywords": [
+    "venezuela",
+    "territorial",
+    "states",
+    "municipalities",
+    "parishes",
+    "geography",
+    "typescript",
+    "2025"
+  ],
+  "author": {
+    "name": "Miguel Hernandez",
+    "email": "contact@hackhit.info",
+    "url": "https://www.hackhit.info"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@commitlint/cli": "^19.5.0",
+    "@commitlint/config-conventional": "^19.5.0",
+    "@rollup/plugin-commonjs": "^28.0.0",
+    "@rollup/plugin-node-resolve": "^15.3.0",
+    "@rollup/plugin-typescript": "^12.1.0",
+    "@semantic-release/changelog": "^6.0.3",
+    "@semantic-release/git": "^10.0.1",
+    "@types/node": "^22.7.9",
+    "@typescript-eslint/eslint-plugin": "^8.11.0",
+    "@typescript-eslint/parser": "^8.11.0",
+    "@vitest/coverage-v8": "^2.1.3",
+    "eslint": "^9.13.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-prettier": "^5.2.1",
+    "husky": "^9.1.6",
+    "lint-staged": "^15.2.10",
+    "prettier": "^3.3.3",
+    "rollup": "^4.24.0",
+    "rollup-plugin-dts": "^6.1.1",
+    "semantic-release": "^24.8.0",
+    "tslib": "^2.8.0",
+    "typedoc": "^0.26.10",
+    "typescript": "^5.6.3",
+    "vitest": "^2.1.3"
+  },
+  "dependencies": {
+    "venezuela": "^0.6.0"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hackhit/venezuela-territorial-2025.git"
+  },
+  "bugs": {
+    "url": "https://github.com/hackhit/venezuela-territorial-2025/issues"
+  },
+  "homepage": "https://www.hackhit.info",
+  "lint-staged": {
+    "*.{ts,tsx}": [
+      "eslint --fix",
+      "prettier --write"
+    ],
+    "*.{json,md}": [
+      "prettier --write"
+    ]
+  },
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional"
+    ]
+  }
+}
